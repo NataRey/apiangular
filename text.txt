@@ -1,0 +1,11 @@
+para trabajar con angula lo primero que debo tener es node 
+luego instalar angular
+angular.io
+npm install -g @angular/cli
+espero a que ase instale todo el paquete de angular
+vamos a crear un proyecto front
+npm -v
+ng version
+esta sera la api que voy a usar 
+## http://www.thecocktaildb.com/api/json/v1/1/search.php?f=a
+
