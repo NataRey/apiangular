@@ -8,4 +8,7 @@ npm -v
 ng version
 esta sera la api que voy a usar 
 ## http://www.thecocktaildb.com/api/json/v1/1/search.php?f=a
+iniciamos por el archivo app config.ts
+ng generate room_serviceaqui voy a traer la 
+
 
