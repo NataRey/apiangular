@@ -20,7 +20,18 @@ export class AppComponent {
   obtenerTodosLosDatos(){
     //llamo al servcio y le digo que me traiga los datos que en este caso enmi data.services.ts se llama al metodo obtenerdatos luego le digo que se suscriba con el metodo subscribe()y le paso una funcion flecha para que se ejecute 
     this.dataService.obtenerDatos().subscribe((respuesta: any)=>{
+      //pinto mi respuesta por consola para probar que si estoy consumiendo el api
       console.log("respuesta: ", respuesta);
+      //creo una condicional donde traigo el nombre del objeto que almacena el arreglo en este caso se llama drinks
+      if(respuesta.drinks){
+        //si la respuesta que pinta esta en el objeto drinks le digo que se almacene esa respuesta en la constante todosLosDatos
+        this.todosLosDatos = respuesta.drinks/*.slice(5)esto lo hago si quiero trabajar solo con una cantidad de elementos y no todos los que traiga el api*/;
+        console.log('funciona bien');
+      }else{
+        //de lo contrario que me muestre un error por consola
+        console.log('No se encontraron los datos del objeto')
+      }
+      
     })
   }
   // para pasar de componentes uso un metodo para que cuando la aplicacion se active 

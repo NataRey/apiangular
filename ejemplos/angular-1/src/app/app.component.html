@@ -1,2 +1,30 @@
-<p>Works</p>
+<Header>
+    <h1>Prepara tu propio coctel</h1>
+</Header>
+<main>
+    <!--Creo una directiva de angular que es un ciclo que me permite recorrer todo el arreglo su sintaxis es asi-->
+    @for (elemento of todosLosDatos; track elemento.idDrink){
+        <!--Luego de hacer el recorrido por el arreglo puedo pintar los elemantos con tarjetas en este caso-->
+
+        <!--Busco alguna tarjeta de bootstrap y la escojo para empezar a traer la informacion que necesito-->
+
+        <!--Si se pintan las 25 tarjetas que en este caso con las 25 que tengo en mi arreglo o api esta funcionando bien-->
+    <div class="card" style="width: 18rem;">
+        <!--Para traer la imagen simplemente llamo al elemento.strDrinkThumb que es como se llama el elemento que tiene la imagen dentro del arreglo y siempre para llamarlo lo pongo dentro de doble llave la cual tecnicamente se llama interpolacion{{}}-->
+        <img src="{{elemento.strDrinkThumb
+        }}" class="card-img-top" alt="imagen de {{elemento.strCategory}}">
+        <div class="card-body">
+            <!--Hago lo mismo con todos los elementos que quiera traer a mi pagina-->
+          <h5 class="card-title">{{elemento.strDrink
+        }}</h5>
+          <p class="card-text">Da clic en el siguiente enlace para ver los ingredientes y la preparacion</p>
+          <a href="#" class="btn btn-primary">Preparacion</a>
+        </div>
+      </div>
+    }
+    
+</main>
+<footer>
+    <h1>Pie de pagina</h1>
+</footer>
 <!--<router-outlet></router-outlet>-->

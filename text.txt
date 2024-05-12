@@ -9,6 +9,7 @@ ng version
 esta sera la api que voy a usar 
 ## http://www.thecocktaildb.com/api/json/v1/1/search.php?f=a
 iniciamos por el archivo app config.ts
-ng generate room_serviceaqui voy a traer la 
+ng generate room_service aqui voy a traer la una carpeta que se llame services 
+finalizo video dia viernes tiempo 1:09:29 
 
 
