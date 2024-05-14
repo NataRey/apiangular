@@ -1,7 +1,7 @@
-<Header>
+<Header class="text-center my-5">
     <h1>Prepara tu propio coctel</h1>
 </Header>
-<main>
+<main class="container d-flex flex-wrap justify-content-center gap-5">
     <!--Creo una directiva de angular que es un ciclo que me permite recorrer todo el arreglo su sintaxis es asi-->
     @for (elemento of todosLosDatos; track elemento.idDrink){
         <!--Luego de hacer el recorrido por el arreglo puedo pintar los elemantos con tarjetas en este caso-->
@@ -24,7 +24,13 @@
     }
     
 </main>
-<footer>
-    <h1>Pie de pagina</h1>
+<!--para pintar los datos de forma basica -->
+<!--<ol>
+  @for(elemento of todosLosDatos; track elemento.strDrink){
+      <li>{{elemento.strCategory}}</li>
+  }
+</ol>-->
+<footer class="text-center my-5">
+    <h1>&copy; 2024</h1>
 </footer>
 <!--<router-outlet></router-outlet>-->
